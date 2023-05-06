@@ -14,7 +14,7 @@
 theme_dir="$HOME/.local/share/plasma/look-and-feel/"
 if [ ! -d  "$theme_dir/Nordic-darker" ]
 then
-   cp $(realpath ../)/files/kde/Nordic-darker $theme_dir
+   tar -xf  $(realpath ../)/files/kde/Nordic-darker.tar.xz -C $theme_dir
 fi
 
 plasma-apply-desktoptheme Nordic-darker
